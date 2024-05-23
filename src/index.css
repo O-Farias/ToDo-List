@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.fade-enter {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 500ms, transform 500ms;
+}
+.fade-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+.fade-exit-active {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 500ms, transform 500ms;
+}
+
+.toggle-complete-enter {
+  opacity: 0.5;
+}
+.toggle-complete-enter-active {
+  opacity: 1;
+  transition: opacity 500ms;
+}
+.toggle-complete-exit {
+  opacity: 1;
+}
+.toggle-complete-exit-active {
+  opacity: 0.5;
+  transition: opacity 500ms;
+}
+
+.completed {
+  background-color: #d1ffd7; /* Cor de fundo para tarefas concluídas */
+  text-decoration: line-through;
+  color: #333333; /* Cor do texto para tarefas concluídas no tema claro */
+}
+.not-completed {
+  background-color: transparent;
+  text-decoration: none;
+  color: #333333; /* Cor do texto para tarefas não concluídas no tema claro */
+}
+
+.dark .completed {
+  background-color: #2d3748; /* Cor de fundo para tarefas concluídas no tema escuro */
+  color: #a0aec0; /* Cor do texto para tarefas concluídas no tema escuro */
+}
+
+.dark .not-completed {
+  background-color: transparent;
+  color: #ffffff; /* Cor do texto para tarefas não concluídas no tema escuro */
+}
+
+.move-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.move-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 300ms, transform 300ms;
+}
+.move-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+.move-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
