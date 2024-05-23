@@ -1,5 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { FaSun, FaMoon, FaCheckCircle } from "react-icons/fa";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faLinkedin,
+  faInstagram,
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons";
 import TodoList from "./components/TodoList";
 import TodoForm from "./components/TodoForm";
 import { DragDropContext, Droppable } from "react-beautiful-dnd";
@@ -341,6 +347,35 @@ function App() {
             </Droppable>
           </div>
         </div>
+        <footer className="mt-8 text-center text-gray-700 dark:text-gray-300">
+          <p>Made by Mateus Farias</p>
+          <div className="flex justify-center space-x-4 mt-2">
+            <a
+              href="https://www.linkedin.com/in/mateus-farias-b6ab77247/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:text-blue-700 transition-colors duration-300"
+            >
+              <FontAwesomeIcon icon={faLinkedin} size="2x" />
+            </a>
+            <a
+              href="https://www.instagram.com/_fariasm/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-pink-500 hover:text-pink-700 transition-colors duration-300"
+            >
+              <FontAwesomeIcon icon={faInstagram} size="2x" />
+            </a>
+            <a
+              href="https://github.com/O-Farias"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-800 dark:text-gray-200 hover:text-black dark:hover:text-white transition-colors duration-300"
+            >
+              <FontAwesomeIcon icon={faGithub} size="2x" />
+            </a>
+          </div>
+        </footer>
         <ToastContainer />
       </div>
     </DragDropContext>
