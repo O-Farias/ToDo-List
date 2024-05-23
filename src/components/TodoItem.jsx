@@ -77,12 +77,15 @@ function TodoItem({ todo, index, toggleComplete, removeTodo, editTodo }) {
             >
               {todo.text}
             </span>
+            <span className="text-sm text-gray-500 dark:text-gray-300 mt-1">
+              {todo.category}
+            </span>
             <div className="flex space-x-2 mt-2">
               <button onClick={handleEdit} className="text-blue-500">
                 Edit
               </button>
               <button
-                className="bg-red-500 text-white px-2 py-1 rounded transition-colors duration-500"
+                className="bg-red-500 text-white px-2 py-1 rounded transition-colors duration-500 hover:bg-red-600"
                 onClick={(e) => {
                   e.stopPropagation();
                   removeTodo(index);
