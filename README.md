@@ -22,8 +22,8 @@ Esta é uma aplicação de To-Do List criada com React, Vite, e Tailwind CSS. A 
 ### 1. Clonar o Repositório
 
 ```sh
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
+git clone hhttps://github.com/O-Farias/ToDo-List
+cd ToDo-List
 ```
 
 ### 2. Instalar Dependências
