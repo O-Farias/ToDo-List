@@ -174,9 +174,9 @@ function App() {
       <div
         className={`${
           isDarkMode ? "dark" : ""
-        } min-h-screen bg-gray-100 dark:bg-gray-900 transition-colors duration-500 p-4`}
+        } min-h-screen flex flex-col justify-center items-center bg-gray-100 dark:bg-gray-900 transition-colors duration-500 p-4`}
       >
-        <div className="flex justify-end mb-4">
+        <div className="flex justify-end mb-4 w-full max-w-5xl">
           <button
             onClick={toggleDarkMode}
             className="text-2xl text-gray-900 dark:text-white transition-colors duration-500"
@@ -184,8 +184,8 @@ function App() {
             {isDarkMode ? <FaSun /> : <FaMoon />}
           </button>
         </div>
-        <div className="max-w-5xl mx-auto bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg transition-colors duration-500">
-          <h1 className="text-3xl font-bold mb-6 text-gray-900 dark:text-white transition-colors duration-500">
+        <div className="w-full max-w-5xl bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg transition-colors duration-500">
+          <h1 className="text-3xl font-bold mb-6 text-gray-900 dark:text-white transition-colors duration-500 text-center">
             To-Do List
           </h1>
           <TodoForm addTodo={addTodo} />
@@ -348,10 +348,10 @@ function App() {
           </div>
         </div>
         <footer className="mt-8 text-center text-gray-700 dark:text-gray-300">
-          <p>Made by Mateus Farias</p>
+          <p>Desenvolvido por Mateus Farias</p>
           <div className="flex justify-center space-x-4 mt-2">
             <a
-              href="https://www.linkedin.com/in/mateus-farias-b6ab77247/"
+              href="https://www.linkedin.com/in/mateus-farias"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-500 hover:text-blue-700 transition-colors duration-300"
@@ -359,7 +359,7 @@ function App() {
               <FontAwesomeIcon icon={faLinkedin} size="2x" />
             </a>
             <a
-              href="https://www.instagram.com/_fariasm/"
+              href="https://www.instagram.com/mateusfarias"
               target="_blank"
               rel="noopener noreferrer"
               className="text-pink-500 hover:text-pink-700 transition-colors duration-300"
@@ -367,7 +367,7 @@ function App() {
               <FontAwesomeIcon icon={faInstagram} size="2x" />
             </a>
             <a
-              href="https://github.com/O-Farias"
+              href="https://github.com/mateusfarias"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-800 dark:text-gray-200 hover:text-black dark:hover:text-white transition-colors duration-300"
