@@ -91,3 +91,7 @@ Você pode alternar entre o tema claro e escuro clicando no ícone de sol/lua no
 ### Ícones de Confirmação
 
 Ícones de confirmação aparecem temporariamente ao adicionar ou mover tarefas para fornecer feedback visual ao usuário.
+
+## Deploy
+
+A aplicação está implantada no GitHub Pages e pode ser acessada [aqui.](https://o-farias.github.io/ToDo-List/)
