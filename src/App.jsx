@@ -61,6 +61,13 @@ function App() {
     setCompleted([...completed, movedTodo]);
     showFeedback("completed");
     toast.success("Task completed!", { position: "top-right" });
+
+    // Verificação de conclusão total
+    if (newInProgress.length === 0 && todos.length === 0) {
+      toast.success("Congratulations! All tasks are completed!", {
+        position: "top-right",
+      });
+    }
   };
 
   const editTodo = (index, newText) => {
@@ -75,6 +82,13 @@ function App() {
     newList.splice(index, 1);
     setList(newList);
     toast.error("Task removed", { position: "top-right" });
+
+    // Verificação de conclusão total ao remover
+    if (list === inProgress && newList.length === 0 && todos.length === 0) {
+      toast.success("Congratulations! All tasks are completed!", {
+        position: "top-right",
+      });
+    }
   };
 
   const toggleDarkMode = () => {
