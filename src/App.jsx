@@ -83,7 +83,7 @@ function App() {
     setList(newList);
     toast.error("Task removed", { position: "top-right" });
 
-    // Verificação de conclusão total ao remover
+    // Verificação de conclusão
     if (list === inProgress && newList.length === 0 && todos.length === 0) {
       toast.success("Congratulations! All tasks are completed!", {
         position: "top-right",
