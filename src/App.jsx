@@ -351,7 +351,7 @@ function App() {
           <p>Desenvolvido por Mateus Farias</p>
           <div className="flex justify-center space-x-4 mt-2">
             <a
-              href="https://www.linkedin.com/in/mateus-farias"
+              href="https://www.linkedin.com/in/mateus-farias-b6ab77247/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-500 hover:text-blue-700 transition-colors duration-300"
@@ -359,7 +359,7 @@ function App() {
               <FontAwesomeIcon icon={faLinkedin} size="2x" />
             </a>
             <a
-              href="https://www.instagram.com/mateusfarias"
+              href="https://www.instagram.com/_fariasm/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-pink-500 hover:text-pink-700 transition-colors duration-300"
@@ -367,7 +367,7 @@ function App() {
               <FontAwesomeIcon icon={faInstagram} size="2x" />
             </a>
             <a
-              href="https://github.com/mateusfarias"
+              href="https://github.com/O-Farias"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-800 dark:text-gray-200 hover:text-black dark:hover:text-white transition-colors duration-300"
