@@ -348,7 +348,7 @@ function App() {
           </div>
         </div>
         <footer className="mt-8 text-center text-gray-700 dark:text-gray-300">
-          <p>Desenvolvido por Mateus Farias</p>
+          <p>Made by Mateus Farias</p>
           <div className="flex justify-center space-x-4 mt-2">
             <a
               href="https://www.linkedin.com/in/mateus-farias-b6ab77247/"
